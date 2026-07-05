@@ -27,24 +27,51 @@
 
 ## Что внутри
 
-```
-.pi_template/
-├── agent/
-│   ├── agents/               # Суб-агенты (можно свои)
-│   ├── data/                 # Твои данные, память, профиль
-│   │   ├── profile.yaml      ← ГЛАВНЫЙ ФАЙЛ: личность агента
-│   │   ├── diary.md           # Дневник агента
-│   │   ├── tasks.json         # Задачи
-│   │   ├── notes/             # Заметки (память, инcтрукции)
-│   │   │   ├── primary/       # Загружаются при старте
-│   │   │   └── secondary/     # По запросу
-│   │   └── memory.db          # Долговременная память (SQLite)
-│   ├── auth.json              # 🔑 API ключи (впиши свои!)
-│   ├── settings.json          # Настройки pi
-│   └── extensions/            # Расширения (Clerk, web-read и т.д.)
-├── extensions/web-read/       # Расширение чтения веб-страниц
-└── CLAUDE.md                  # Контекст для Claude Code
-```
+ ```
+   agent/
+   ├── extensions/
+   │   └── clerk/                  ← Главное: Clerk — AI ассистент
+   │       ├── index.ts            # Точка входа, ядро
+   │       ├── profile.ts          # Загрузка личности из profile.yaml
+   │       ├── memory.ts           # Система памяти (RAM, mid, long, diary)
+   │       ├── diary.ts            # Дневник агента
+   │       ├── sleep.ts            # Сон: консолидация памяти
+   │       ├── ingest.ts           # Импорт контекста
+   │       ├── todo.ts             # TODO-лист
+   │       ├── tasks.ts            # Управление задачами
+   │       ├── reminders.ts        # Напоминалки
+   │       ├── home.ts             # Статус дома/не дома (маршрутизация TG)
+   │       ├── ping.ts             # Проактивные пинги
+   │       └── data/                ← Твои данные
+   │           ├── profile.yaml    # Личность, тон, правила
+   │           ├── diary.md        # Дневник агента
+   │           ├── tasks.json      # Задачи
+   │           ├── reminders.json  # Напоминалки
+   │           ├── mood.json       # Текущее настроение
+   │           ├── home.json       # Статус дома
+   │           ├── pings.md        # История пингов
+   │           ├── new_facts.md    # Новые факты (для консолидации)
+   │           └── notes/
+   │               ├── primary/    # Загружаются при старте
+   │               │   ├── diary.md
+   │               │   ├── instructions.md
+   │               │   ├── midMemory.md
+   │               │   └── todo.md
+   │               └── secondary/  # По запросу (longMemory, ошибки, идеи...)
+   │       ├── ui.ts               # Интерфейс (TUI)
+   │       ├── tg.ts / tg_poller.ts  # Telegram: отправка/поллинг
+   │       ├── tg_bot.py           # Telegram Bot API (Python)
+   │       ├── tg_poll.py          # Поллинг TG (Python)
+   │       ├── whisper.py          # Голосовые → текст
+   │       ├── utils.ts / types.ts  # Утилиты и типы
+   │       ├── subagent.ts         # Запуск субагентов (дефолтный pi)
+   │       ├── beehive.ts + beehive/  # асинхронные субагенты на базе PI (хз работает ли) )
+   │       ├── claude-plugin/       # Плагин для Claude Code
+   │       ├── mcp-bridge/          # MCP мост
+   ├── agents/                     # Субагенты (planner, worker, reviewer...)
+   ├── auth.json                   # API ключи
+   └── settings.json               # Настройки pi
+ ```
 
 ## 🚀 Быстрый старт
 
