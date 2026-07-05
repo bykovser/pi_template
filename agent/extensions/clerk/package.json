@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@yc-tech/telegramify-markdown": "^0.1.1"
+  }
+}

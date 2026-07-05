@@ -1,0 +1,15 @@
+{
+  "reminders": [
+    {
+      "id": null,
+      "message": "⏰ Пинок: закажи камеру для моноколеса! 5-й день пошёл 🦶😏",
+      "dueAt": "2026-06-25T10:10:00.460Z",
+      "status": "fired",
+      "source": "manual",
+      "mood": "productive",
+      "createdAt": "2026-06-25T06:10:00.460Z",
+      "updatedAt": "2026-06-25T10:10:03.556Z"
+    }
+  ],
+  "nextId": null
+}

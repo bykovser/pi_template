@@ -1,0 +1,7 @@
+{
+  "name": "zhannochka",
+  "version": "1.0.0",
+  "description": "Жанночка (Clerk) personality, mood, tasks and Telegram bridge ported to Claude Code.",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}

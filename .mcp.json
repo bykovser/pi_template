@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "clerk-bridge": {
+      "command": "node",
+      "args": [
+        "--env-file=agent/extensions/clerk/mcp-bridge/.env",
+        "agent/extensions/clerk/mcp-bridge/src/index.js"
+      ]
+    }
+  }
+}

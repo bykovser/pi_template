@@ -1,0 +1,7 @@
+Task: queen_test_1782322999
+Agent: you
+Cmd: "C:\Users\sas\AppData\Local\pi-node\current\pi" --no-session --print --no-extensions --model deepseek/deepseek-v4-flash "Прочитай файл C:\Users\sas\.pi\agent\extensions\clerk\beehive\queen_test_1782322999_prompt.txt и выполни задание из него. Результат в JSON: C:\Users\sas\.pi\agent\extensions\clerk\beehive\outbox\queen_test_1782322999.json."
+Exit: Command failed: "C:\Users\sas\AppData\Local\pi-node\current\pi" --no-session --print --no-extensions --model deepseek/deepseek-v4-flash "Прочитай файл C:\Users\sas\.pi\agent\extensions\clerk\beehive\queen_test_1782322999_prompt.txt и выполни задание из него. Результат в JSON: C:\Users\sas\.pi\agent\extensions\clerk\beehive\outbox\queen_test_1782322999.json."
+
+Stdout: 
+Stderr: 

@@ -1,0 +1,16 @@
+{
+  "name": "web-read",
+  "version": "1.0.0",
+  "description": "**Плагин для pi-coding-agent**, который позволяет читать содержимое веб-страниц через `clerk_web_read` tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "puppeteer-core": "^25.2.1"
+  }
+}

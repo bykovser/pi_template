@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": "queen_test_1782322999",
+      "agent": "you",
+      "assigner": "queen_21272@DESKTOP-AE0KJPC",
+      "executor": "you",
+      "task": "Ты второй экземпляр Жанночки. Напиши playful сообщение Серёге: подколоть что открыл два терминала.",
+      "createdAt": "2026-06-24T17:43:19.675Z",
+      "status": "done",
+      "resultFile": "C:\\Users\\sas\\.pi\\agent\\extensions\\clerk\\beehive\\outbox\\queen_test_1782322999.json",
+      "completedAt": "2026-06-24T17:43:25.000Z"
+    },
+    {
+      "id": "consolidate_1782333839973",
+      "agent": "consolidator",
+      "task": "{\"sessionFile\":\"C:/Users/sas/.pi/agent/sessions/--C--Users-sas--/2026-06-24T10-47-51-273Z_019ef93e-50e9-7c4c-b253-44e25983aaca.jsonl\",\"context\":\"Full day of Clerk development - TG inject, Queen System, web search, context7, profile cleanup, sleep cycle.\"}",
+      "assigner": "18460@DESKTOP-AE0KJPC",
+      "executor": "consolidator",
+      "createdAt": "2026-06-24T20:43:59.978Z",
+      "status": "done",
+      "resultFile": "C:\\Users\\sas\\.pi\\agent\\extensions\\clerk\\beehive\\outbox\\consolidate_1782333839973.json",
+      "completedAt": "2026-06-24T23:45:00.000Z"
+    }
+  ],
+  "lastCheck": "2026-06-24T20:44:04.018Z",
+  "queen": {
+    "id": "16596@DESKTOP-AE0KJPC",
+    "lastSeen": "2026-07-04T09:58:37.949Z",
+    "startedAt": "2026-07-04T09:42:29.460Z"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "lastChangelogVersion": "0.79.9",
+  "defaultProvider": "openrouter",
+  "defaultModel": "deepseek/deepseek-v4-flash",
+  "defaultThinkingLevel": "high",
+  "enabledModels": [
+    "openrouter/deepseek/deepseek-v4-flash",
+    "openrouter/deepseek/deepseek-v4-pro",
+    "openrouter/qwen/qwen3.7-plus",
+    "openrouter/qwen/qwen3.7-max",
+    "openrouter/anthropic/claude-sonnet-4.6",
+    "openrouter/z-ai/glm-5.2",
+    "openrouter/moonshotai/kimi-k2.7-code",
+    "openrouter/minimax/minimax-m3",
+    "openrouter/xiaomi/mimo-v2.5-pro",
+    "openrouter/xiaomi/mimo-v2.5",
+    "openrouter/nvidia/nemotron-nano-12b-v2-vl:free",
+    "openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+  ],
+  "autocompleteMaxVisible": 5,
+  "steeringMode": "all",
+  "followUpMode": "all",
+  "theme": "dark",
+  "terminal": {
+    "clearOnShrink": true,
+    "showTerminalProgress": true
+  },
+  "enableInstallTelemetry": false
+}
